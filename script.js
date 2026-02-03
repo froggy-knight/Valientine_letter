@@ -246,6 +246,7 @@ function spawnLoveMessages() {
 // YES is clicked
 yesBtn.addEventListener("click", () => {
     clearInterval(countdown); // Stop the timer!
+    timerDisplay.classList.remove('active'); // Hide the timer
 
     // Show Slice4 first
     lunaImg.src = "Slice4.png";

@@ -430,6 +430,15 @@ h1 {
     padding: 12px 20px;
 }
 
+.love-btn-hint {
+    color: white !important;
+    font-size: 0.5rem;
+    display: block;
+    margin-top: 4px;
+    /* Simulating padding-top */
+    opacity: 0.9;
+}
+
 .love-btn:hover {
     background-color: #ff1493 !important;
     transform: scale(1.05);
@@ -478,7 +487,7 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 2px 2px white;
     position: fixed;
-    top: 10%;
+    top: 6%;
     /* More responsive than px */
     z-index: 1000;
     background: rgba(255, 255, 255, 0.9);
