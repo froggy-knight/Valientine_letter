@@ -470,6 +470,7 @@ h1 {
 }
 
 /* --- TIMER & LIVES --- */
+/* --- TIMER & LIVES --- */
 #timer {
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
@@ -477,13 +478,27 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 2px 2px white;
     position: fixed;
-    top: 200px;
+    top: 10%;
+    /* More responsive than px */
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border: 4px solid var(--primary-red);
     display: none;
     /* Hidden by default until envelope opens */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #timer {
+        top: 15%;
+        /* Lower on mobile to avoid notches/URL bars */
+        font-size: 14px;
+        /* Smaller text for mobile */
+        padding: 8px;
+    }
 }
 
 #timer.active {
@@ -521,7 +536,5 @@ h1 {
         border-width: 105px 150px 0 150px;
     }
 
-    #timer {
-        top: 100px;
-    }
+
 }
