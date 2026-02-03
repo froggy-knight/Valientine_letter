@@ -1,0 +1,74 @@
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Valentine Letter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="heart-bg" id="heart-bg"></div>
+
+  <!-- Envelope Screen -->
+  <div id="envelope-container">
+    <p id="timer-warning"
+      style="margin-bottom: 20px; font-family: 'Press Start 2P'; font-size: 10px; color: #ff0000; line-height: 1.5; text-shadow: 1px 1px 0 #fff;">
+      ⚠️ ALERT: You have 30s to answer! ⚠️<br>
+      (No pressure... or maybe a little 😈)
+    </p>
+    <div id="envelope" class="pixel-envelope">
+      <div class="envelope-lid"></div>
+      <div class="pixel-heart"></div>
+    </div>
+    <p style="margin-top: 20px; font-family: 'Press Start 2P'; font-size: 12px; color: #CD5C5C;">CLICK ME</p>
+  </div>
+
+  <!-- Timer Element -->
+  <div id="timer" class="timer-hidden">TIME REMAINING: 00:30</div>
+
+  <!-- Letter Screen -->
+  <div id="letter-container">
+    <div class="letter-window pixel-window">
+      <div class="title-bar">
+        <span style="font-size:12px;">LOVE.BEBU</span>
+
+        <!-- Lives / Hearts -->
+        <div id="heart-lives" class="heart-lives">
+          <span>❤️</span><span>❤️</span><span>❤️</span>
+        </div>
+
+        <div class="controls">
+          <div class="control-btn"></div>
+          <div class="control-btn"></div>
+          <div class="control-btn"></div>
+        </div>
+      </div>
+
+      <div class="content-area">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="Slice1.png" class="luna-img" id="luna-img" />
+
+        <div class="buttons" id="letter-buttons">
+          <button class="pixel-btn yes-btn" id="yes-btn">Yes</button>
+
+          <div class="no-wrapper">
+            <button class="pixel-btn no-btn" id="no-btn">No</button>
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>DATE:</strong><br />See you soon<br />call me!!<br /><br />
+          <button class="pixel-btn love-btn" id="love-btn">I Love You ❤️</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
