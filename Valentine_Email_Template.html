@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Letter For You 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #FFE4E1;
+            /* --bg-pink */
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #CD5C5C;
+            /* --primary-red */
+        }
+
+        .email-container {
+            max-width: 600px;
+            width: 100%;
+            background: #FFC0CB;
+            /* --light-pink */
+            border: 4px solid #000;
+            box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .email-header {
+            background: #000;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #000;
+        }
+
+        .email-header h1 {
+            color: #fff;
+            font-size: 14px;
+            /* Pixel fonts run large */
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .control {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border: 2px solid #fff;
+        }
+
+        .email-body {
+            padding: 40px 30px;
+            background: #fff;
+            border: 4px solid #000;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .greeting {
+            font-size: 16px;
+            color: #CD5C5C;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0 #FFE4E1;
+        }
+
+        .message-box {
+            background: #FFF9FC;
+            border: 4px solid #CD5C5C;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 10px;
+            /* Smaller for readability in pixel font */
+            line-height: 2.0;
+            color: #333;
+            text-align: left;
+            position: relative;
+            box-shadow: 4px 4px 0 #CD5C5C;
+        }
+
+        .message-box::before {
+            content: "♥";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 0 10px;
+            font-size: 20px;
+            color: #CD5C5C;
+        }
+
+        .hearts-decoration {
+            font-size: 20px;
+            margin: 30px 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-text {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #CD5C5C;
+            padding: 15px 30px;
+            text-decoration: none;
+            border: 4px solid #000;
+            font-size: 12px;
+            box-shadow: 6px 6px 0 #000;
+            transition: all 0.1s;
+            text-transform: uppercase;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .cta-button:hover {
+            top: 2px;
+            left: 2px;
+            box-shadow: 2px 2px 0 #000;
+            background: #FFE4E1;
+        }
+
+        .email-footer {
+            padding: 20px;
+            text-align: center;
+            color: #CD5C5C;
+            font-size: 8px;
+            border-top: 4px solid #000;
+            background: #FFE4E1;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-size: 10px;
+            color: #CD5C5C;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .email-header h1 {
+                font-size: 12px;
+            }
+
+            .greeting {
+                font-size: 14px;
+            }
+
+            .message-box {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="email-header">
+            <h1>💌 LOVE_LETTER.TXT</h1>
+            <div class="window-controls">
+                <div class="control" style="background:#FF69B4"></div>
+                <div class="control" style="background:#FFE4C4"></div>
+                <div class="control" style="background:#90EE90"></div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="email-body">
+            <div class="greeting">
+                Hello Bebu! 🌹
+            </div>
+
+            <div class="message-box">
+                <p>I know currently we are on bad terms and heck aren't even talking much or at all, some hurtful things
+                    were said and I'd like to apologize to you for my poor communications.<br><br>
+                    That said will you press the button below? I would know if you don't press it !! wink plus I know
+                    you want to press it, i swear it won't disappoint!!!!!!</p>
+            </div>
+
+            <div class="hearts-decoration">
+                ❤️ 💕 💖 💕 ❤️
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <p class="cta-text">
+                    I created something special for you.<br>
+                    As my love deserves nothing but the best.
+                </p>
+
+                <a href="YOUR_WEBSITE_URL_HERE" class="cta-button">
+                    Open My Letter 💌
+                </a>
+            </div>
+
+            <div class="signature">
+                With all my heart,<br><br>
+                Rojan Maharjan
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="email-footer">
+            Made with 💕 just for you
+        </div>
+    </div>
+</body>
+
+</html>
