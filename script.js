@@ -180,7 +180,7 @@ noBtn.addEventListener("click", () => {
             title.textContent = "Really?";
         } else if (noClickCount === 2) {
             lunaImg.src = "Slice3.png";
-            title.textContent = "Luna will be sad 🥺";
+            title.textContent = "I'll cry... 🥺";
         } else if (noClickCount === 3) {
             lunaImg.src = "Slice3.png";
             title.textContent = "Why are you clicking No? 😭";
