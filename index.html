@@ -1,75 +1,168 @@
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Valentine Letter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Letter For You 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Media Queries for responsive adjustments where supported */
+        @media only screen and (max-width: 600px) {
+            .mobile-padding {
+                padding: 10px !important;
+            }
+
+            .mobile-header-text {
+                font-size: 12px !important;
+            }
+
+            .mobile-text {
+                font-size: 14px !important;
+            }
+
+            .mobile-message {
+                font-size: 9px !important;
+            }
+        }
+    </style>
 </head>
 
-<body>
-  <!-- Floating Hearts Background -->
-  <div class="heart-bg" id="heart-bg"></div>
+<body
+    style="margin: 0; padding: 0; background-color: #FFE4E1; font-family: 'Press Start 2P', cursive, monospace; color: #CD5C5C; min-height: 100vh;">
+    <!-- Outer Table (Body Wrapper) -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="background-color: #FFE4E1; margin: 0; padding: 20px;" class="mobile-padding">
+        <tr>
+            <td align="center" valign="middle">
 
-  <!-- Envelope Screen -->
-  <div id="envelope-container">
-    <p id="timer-warning"
-      style="margin-bottom: 20px; font-family: 'Press Start 2P'; font-size: 10px; color: #ff0000; line-height: 1.5; text-shadow: 1px 1px 0 #fff;">
-      ⚠️ ALERT: You have 30s to answer! ⚠️<br>
-      (No pressure... or maybe a little 😈)
-    </p>
-    <div id="envelope" class="pixel-envelope">
-      <div class="envelope-lid"></div>
-      <div class="pixel-heart"></div>
-    </div>
-    <p style="margin-top: 20px; font-family: 'Press Start 2P'; font-size: 12px; color: #CD5C5C;">CLICK ME</p>
-  </div>
+                <!-- Main Email Container -->
+                <table border="0" cellpadding="0" cellspacing="0" width="600"
+                    style="max-width: 600px; width: 100%; background-color: #FFC0CB; border: 4px solid #000000; box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.2);">
 
-  <!-- Timer Element -->
-  <div id="timer" class="timer-hidden">TIME REMAINING: 00:30</div>
+                    <!-- Header -->
+                    <tr>
+                        <td style="background-color: #000000; padding: 15px; border-bottom: 4px solid #000000;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <!-- Title -->
+                                    <td align="left">
+                                        <h1 class="mobile-header-text"
+                                            style="color: #ffffff; font-size: 14px; line-height: 1.5; text-transform: uppercase; margin: 0; font-family: 'Press Start 2P', cursive, monospace;">
+                                            💌 LOVE_LETTER.TXT</h1>
+                                    </td>
+                                    <!-- Controls -->
+                                    <td align="right">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="padding-left: 8px;">
+                                                    <span
+                                                        style="display: inline-block; width: 16px; height: 16px; background-color: #FF69B4; border: 2px solid #ffffff;"></span>
+                                                </td>
+                                                <td style="padding-left: 8px;">
+                                                    <span
+                                                        style="display: inline-block; width: 16px; height: 16px; background-color: #FFE4C4; border: 2px solid #ffffff;"></span>
+                                                </td>
+                                                <td style="padding-left: 8px;">
+                                                    <span
+                                                        style="display: inline-block; width: 16px; height: 16px; background-color: #90EE90; border: 2px solid #ffffff;"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-  <!-- Letter Screen -->
-  <div id="letter-container">
-    <div class="letter-window pixel-window">
-      <div class="title-bar">
-        <span style="font-size:12px;">LOVE.EXE</span>
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 10px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #ffffff; border: 4px solid #000000; text-align: center;">
+                                <tr>
+                                    <td style="padding: 40px 30px;">
 
-        <!-- Lives / Hearts -->
-        <div id="heart-lives" class="heart-lives">
-          <span>❤️</span><span>❤️</span><span>❤️</span>
-        </div>
+                                        <!-- Greeting -->
+                                        <div class="mobile-text"
+                                            style="font-size: 16px; color: #CD5C5C; margin-bottom: 30px; text-transform: uppercase; text-shadow: 2px 2px 0 #FFE4E1; font-family: 'Press Start 2P', cursive, monospace;">
+                                            Hello Bebu! 🌹
+                                        </div>
 
-        <div class="controls">
-          <div class="control-btn"></div>
-          <div class="control-btn"></div>
-          <div class="control-btn"></div>
-        </div>
-      </div>
+                                        <!-- Message Box -->
+                                        <!-- Note: Pseudo-elements like ::before often don't work in email. Moved the heart inside. -->
+                                        <div style="position: relative; margin: 30px 0;">
+                                            <!-- Heart Decoration on top of message box -->
+                                            <div
+                                                style="width: 100%; text-align: center; margin-bottom: -15px; position: relative; z-index: 10;">
+                                                <span
+                                                    style="background-color: #ffffff; padding: 0 10px; font-size: 20px; color: #CD5C5C; font-family: sans-serif;">♥</span>
+                                            </div>
 
-      <div class="content-area">
-        <h1 id="letter-title">Will you be my Valentine?</h1>
+                                            <div class="mobile-message"
+                                                style="background-color: #FFF9FC; border: 4px solid #CD5C5C; padding: 20px; font-size: 10px; line-height: 2.0; color: #333333; text-align: left; box-shadow: 4px 4px 0 #CD5C5C; font-family: 'Press Start 2P', cursive, monospace;">
+                                                <p style="margin: 0 0 10px 0;">I may be very rude to you but my intentions are not about to made you feel sad. Yes i made you cry for small things i don’t why but i will always love you sm kanchu. </p>
+                                                <p style="margin: 0;">I can fight with you but never wanna loose you so its my fault i am being sorry about the miss understanding you will never get to
+                                                know how much i want you do my love for you is like deep oceans & that you will never count.</p>
+                                            </div>
+                                        </div>
 
-        <img src="Slice1.png" class="luna-img" id="luna-img" />
+                                        <!-- Hearts Decoration -->
+                                        <div
+                                            style="font-size: 20px; margin: 30px 0; color: #CD5C5C; font-family: sans-serif;">
+                                            ❤️ 💕 💖 💕 ❤️
+                                        </div>
 
-        <div class="buttons" id="letter-buttons">
-          <button class="pixel-btn yes-btn" id="yes-btn">Yes</button>
+                                        <!-- CTA Section -->
+                                        <div style="text-align: center; margin: 40px 0;">
+                                            <p
+                                                style="font-size: 10px; color: #666666; margin-bottom: 25px; line-height: 1.8; font-family: 'Press Start 2P', cursive, monospace;">
+                                                I created something special for you.<br>
+                                                As my love deserves nothing but the best.
+                                            </p>
 
-          <div class="no-wrapper">
-            <button class="pixel-btn no-btn" id="no-btn">No</button>
-          </div>
-        </div>
+                                            <!-- Button -->
+                                            <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                                <tr>
+                                                    <td align="center"
+                                                        style="background-color: #ffffff; border: 4px solid #000000; box-shadow: 6px 6px 0 #000000;">
+                                                        <a href="https://mjnrojan.github.io/bebu/"
+                                                            style="display: block; padding: 15px 30px; color: #CD5C5C; text-decoration: none; font-size: 12px; text-transform: uppercase; font-family: 'Press Start 2P', cursive, monospace; font-weight: bold;">
+                                                            Open My Letter 💌
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
 
-        <p id="final-text" class="final-text" style="display: none">
-          <strong>DATE:</strong><br />See you soon<br />call me!!<br /><br />
-          <button class="pixel-btn love-btn" id="love-btn">I Love You ❤️ <br><span class="love-btn-hint">click
-              me</span></button>
-        </p>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+                                        <!-- Signature -->
+                                        <div
+                                            style="margin-top: 30px; font-size: 10px; color: #CD5C5C; font-family: 'Press Start 2P', cursive, monospace;">
+                                            With all my heart,<br><br>
+                                            Nischal 
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td
+                            style="padding: 20px; text-align: center; color: #CD5C5C; font-size: 8px; border-top: 4px solid #000000; background-color: #FFE4E1; font-family: 'Press Start 2P', cursive, monospace;">
+                            Made with 💕 just for you
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
